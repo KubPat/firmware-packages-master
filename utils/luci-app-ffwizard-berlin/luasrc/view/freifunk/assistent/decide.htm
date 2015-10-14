@@ -1,0 +1,58 @@
+<%+header%>
+
+<link href="/freifunk/assistent/assistent.css" rel="stylesheet" />
+
+<div class="section">
+  <h3>Freifunk-Asistent</h3>
+
+  <div class="info alert-message">
+    <p class="success">
+Další následné nastavení pro bezplatné bezdrátové připojení k síti.
+Pomocí průvodce vám bude přidělena Ip adresa<a target="blank"
+href="http://config.berlin.freifunk.net/">config.berlin.freifunk.net</a>
+.
+    </p>
+  </div>
+
+  <div class="tile">
+    <div style="text-align: center; margin: 10px">
+      <a class="cbi-button cbi-button-save" href="<%=luci.dispatcher.build_url("admin/freifunk/assistent/optionalConfigs")%>?sharenet=0">
+       Zapojte se do sítě Freifunk
+      </a>
+    </div>
+    <div class="alert-message">
+      <p class="info">
+
+    Rozšiřte Freifunk síť tím, že se přípojíte k jinému bezdrátovému směrovači.
+
+        Můžete napsat na<a target="blank"
+        href="http://berlin.freifunk.net/network/map/">Freifunk Mapa</a>
+        Zde se můžete podívat na mapu freifunk přípojení.
+      </p>
+    </div>
+  </div>
+
+  <div class="tile">
+    <div style="text-align: center; margin: 10px">
+      <a class="cbi-button cbi-button-save" href="<%=luci.dispatcher.build_url("/admin/freifunk/assistent/sharedInternet")%>">
+        Zapojte se do sítě a sdílejte připojení Freifunk.
+      </a>
+    </div>
+    <div class="alert-message">
+      <p class="info">
+        Podpořte nás tím, že budete poskytovat bezdrátové sítě.
+         Tato volba je užitečná i bez napojení na další směrovače Freifunk.
+        VPN obdržíte zde <a target="blank"
+        href="http://lists.berlin.freifunk.net/cgi-bin/mailman/listinfo/berlin">Seznam</a>
+        Pro více informací o VPN klikněte zde<a target="blank" href="http://wiki.freifunk.net/Vpn03">Freifunk-Wiki</a>.
+      </p>
+    </div>
+  </div>
+
+<div class="clear"></div>
+</div>
+<div class="cbi-page-actions">
+  <a class="cbi-button cbi-button-apply" href="<%=luci.dispatcher.build_url("admin/freifunk/assistent/generalInfo")%>">Zpět</a>
+  <a class="cbi-button cbi-button-apply" href="<%=luci.dispatcher.build_url("admin/freifunk/assistent/cancel")%>">Zrušit</a>
+</div>
+<%+footer%>
